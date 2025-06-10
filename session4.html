@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+    <h1>unordered list</h1>
+     <ul>
+            <li><a href="About">About ME</a></ul>
+            <li><a href="Projects">Projects</a></li>
+            <li><a href="Skills">Skills</a></li>
+            <li><a href="Contact">Contact</a></li>
+        </ul>
+        <h1>description list</h1>
+        <dl>
+            <dt><b>Intelligent Diagnosis and Perception Assistant</b></dt>
+            <dd>--using machine Learning Algorithms it will analyse the disease based on the symptoms and it provides the perception regarding to the Disease.</dd>
+            <dt><b>Quizz App</b></dt>
+            <dd>--using core java itr was devloped</dd>
+            <dt><b>Keylogger</b></dt>
+            <dd>--using keyStrokes it captures the data when the user hits the keys.</dd>
+        </dl>
+        <h1>ordered list</h1>
+        <ol>
+            <li>python,java,c</li>
+            <li>html,css,javaScript</li>
+            <li>Good Communication</li>
+            <li>problem Solving</li>
+        </ol>
+        <table border=2px >
+            <tr>
+                <th>s.No</th>
+                <th>Name</th>
+                <th>Hall ticket no</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Rachana</td>
+                <td>22f41a0571</td>
+            </tr>
+             <tr>
+                <td>2</td>
+                <td>navya</td>
+                <td>22f41a0570</td>
+            </tr>
+             <tr>
+                <td>3</td>
+                <td>JayaSree</td>
+                <td>22f41a0533</td>
+            </tr>
+             <tr>
+                <td>4</td>
+                <td rowspan="2">Akila</td>
+                
+            </tr>
+             <tr >
+               <td>5</td>
+                <td  >Sindhu</td>
+              
+            </tr>
+            <tr>
+                <td colspan="3">total 5 Students are there</td>
+            </tr>
+           
+            
+        </table>
+        <h2>Form</h2>
+        <form action="index.html" method="get">
+<feildset><legend>Enter your Personal Details</legend><br>
+           
+ <label for="fname">Enter First Name</label>
+<input type="text"><br><br>
+ <label for="lname">Enter Last Name</label>
+            <input type="text"><br><br>
+                
+ <label for="number">Age</label>
+            <input type="number"><br><br>
+                
+                <label for="email">Enter Email</label>
+                <input type="email">
+           <br><br>
+            
+                <label for="password">Enter Password</label>
+                <input type="password"><br><br>
+                <label for="cofirm">Confirm Password</label>
+                <input type="password"><br><br>
+            
+                <label for="gender">Gender</label>
+               <input type="radio">Female
+               <input type="radio">Male<br><br>
+            
+            <label for="dob">Enter Date of Birth</label>
+            <input type="date"><br><br>
+            <label for="hobbies">Select your Hobbies</label>
+            <select>
+                <option value="">---select---</option>
+                <option value="">reading</option>
+                <option value="">listening to music</option>
+
+            </select><br><br>
+            <label for="phone">Enter Phone Number</label>
+            <input type="tel" min="0" max="9"><br><br>
+            <label for="photo">Insert the image</label>
+            <input type="file"><br>
+            <br>
+            <label for="area">Address</label>
+            <input type="textarea"><br><br>
+            <label for="submit">Click on submit</label><br>
+            <input type="submit">
+           </feildset>
+            
+
+        </form>
+        
+<h1>JavaScript Geolocation</h1>
+
+<p>Click the button to get your coordinates.</p>
+
+<button onclick="getLocation()">Try It</button>
+
+<p id="demo"></p>
+
+<script>
+const x = document.getElementById("demo");
+
+function getLocation() {
+  try {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } catch(err) {
+    x.innerHTML = err;
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+<audio controls>
+<source src="[iSongs.info] 01 - Oh Sita Hey Rama.mp3"  ></audio>
+
+</body>
+</html>
