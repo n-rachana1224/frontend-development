@@ -1,0 +1,61 @@
+h1{
+    color:blue;
+    text-align:center;
+}
+#class{
+    
+    -webkit-text-fill-color:yellowgreen ;
+    color:red;
+}
+html{
+    background-color: cyan;
+}
+div p{
+    color:black;
+
+}
+div>span{
+    color: orange;
+}
+h1+p{
+    background-color: chartreuse;
+}
+h1~p{
+    background-color: palevioletred;
+}
+input[type="text"]{
+    color:green
+}
+input[type="number"]{
+    color:red;
+}
+p:hover{
+background-color: yellowgreen;
+color:blueviolet;
+}
+#h4:hover{
+    color:blue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    font-size: 20px;
+}
+#class{
+    border-style: dotted;
+    border-color:blue;
+}
+h5::first-letter{
+    font-style: italic;
+    font-size: 70px;
+}
+p::first-line{
+    color:blue;
+
+}
+body::selection{
+    color:pink;
+    background-color: beige;
+}
+/*                    */
+#apple:hover{
+    content:"promogranate";
+}
