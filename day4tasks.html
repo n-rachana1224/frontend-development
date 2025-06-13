@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Grid Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: #333;
+      color: white;
+      flex-wrap: wrap;
+    }
+
+    header h1 {
+      font-size: 24px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+
+    .container {
+      padding: 30px 40px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+    }
+
+    .product-card {
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
+    
+    .product-info {
+      padding: 15px;
+    }
+
+    .product-info h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .product-info p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .price {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #e67e22;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 10px 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>ShopZone</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Products</a>
+      <a href="#">Cart</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="product-grid">
+      <div class="product-card">
+  
+        <div class="product-info">
+          <h3>Wireless Headphones</h3>
+          <p>High-quality sound with noise cancellation.</p>
+          <div class="price">$59.99</div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        
+        <div class="product-info">
+          <h3>Smart Watch</h3>
+          <p>Track your fitness and stay connected.</p>
+          <div class="price">$129.99</div>
+        </div>
+      </div>
+
+      <div class="product-card">
+       
+        <div class="product-info">
+          <h3>Bluetooth Speaker</h3>
+          <p>Portable and powerful with deep bass.</p>
+          <div class="price">$39.99</div>
+        </div>
+      </div>
+
+      <div class="product-card">
+       
+        <div class="product-info">
+          <h3>USB-C Charger</h3>
+          <p>Fast charging for all your devices.</p>
+          <div class="price">$19.99</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
