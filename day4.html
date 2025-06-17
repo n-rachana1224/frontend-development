@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .rectangle{
+    width:200px;
+    height:100px;
+    background-color:firebrick;
+    margin :auto;
+    border:30px solid yellow;
+}
+.rectangle2{
+    width:400px;
+    height:300px;
+    background-color:blueviolet;
+    margin:auto;
+    border:10px dotted black;
+    
+
+}
+h3,h2{
+    font-style:italic;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: 0cqb;
+    border:  red;
+    border-style:double  groove;
+    text-transform: uppercase;
+}
+p{
+    text-decoration: overline;
+    background-color:yellow;
+    background-size:cover;
+    border-style:inset;
+border-width: thin;}
+body{
+    
+    background-clip: inherit;
+
+}
+div.parent{
+    background-color:green;
+    width:400px;
+    height:400px;
+    position:relative;
+z-index:1;
+
+}
+div.child1{
+    background-color: blue;
+    width:300px;
+    height:300px;
+    z-index:2;
+    position:absolute;
+    top:50%;
+    left:50%;
+      transform: translate(-50%, -50%);
+}
+div.child2{
+    background-color: aquamarine;
+    width:200px;
+    height:200px;
+position:absolute;
+top:50%;
+left:50%;
+  transform: translate(-50%, -50%);
+
+    
+    z-index:3;
+}
+div.box1{
+    background-color: blueviolet;
+    width:400px;
+    height:400px;
+    position:relative;
+    z-index:1;
+}
+div.box2{
+    background-color: aqua;
+    width:200px;
+    height:200px;
+    position:absolute;
+    bottom:100px;
+   z-index:2;
+    left:100px;
+    
+}
+.flexbox-container{
+    display:flex;
+}
+.flexbox-item{
+    height:100px;
+    width:50px;
+    background-color: aqua;
+    border:15px solid blue;
+    margin:10px;
+    padding:20px;
+}
+.flexbox-item1{
+    min-height:100px;
+}
+.flexbox-item1{
+    min-height: 100px;
+}
+#overflow{
+    /*overflow:hidden;*/
+    /*overflow:scroll;*/
+    overflow
+    width:200px;
+    height:200px;
+}
+.container1{
+    display:grid;
+    grid-template-columns: 150px 150px 150px 150px;
+    
+}
+.grid{
+    width:100px;
+    height:100px;
+    background-color: orange;
+    border-style:dashed;
+    text-align: center;
+}
+.id{
+    width:200px;
+    height:200px;
+    background-color: yellow;
+    transition: height 4s;
+}
+.id:hover{
+    height:400px;
+}
+#animat{
+    width:100px;
+    height:100px;
+    background-color:orchid;
+    animation-name: animation;
+    animation-duration: 6s;
+}
+@keyframes animation{
+    0%{background-color: aqua;}
+    25%{background-color: blue;}
+    50%{background-color: blueviolet;}
+    100%{background-color: cadetblue;}
+
+}
+    </style>
+    <title>Box</title>
+</head>
+<body>
+    <div class="rectangle">
+<p>hello</p>
+    </div>
+    <div class="rectangle2"><p>HI</p></div>
+    <h3>hello good morning!</h3>
+    <h2>How are you?</h2>
+    <p>hey!</p>
+    <h1>positioning properties</h1>
+    <div class="parent">parent
+    <div class="child1">child1</div>
+    <div class="child2">child2</div>
+</div>
+<h2>overlap</h2>
+<div class="box1">box1
+    <div class="box2">box2</div>
+    
+</div>
+<h1>flexbox</h1>
+    <div class="flexbox-container">
+    <div class="flexbox-item flexbox-item1"></div>
+    <div class="flexbox-item flexbox-item1"></div>
+<div class="flexbox-item flexbox-item1"></div>
+<div class="flexbox-item flexbox-item1"></div></div>
+<h2>overflow</h2>
+<div id="overflow" >
+    <p >jhdgasjkdhywkashycfcfcfbvkxcjnhkdsefudhirfjhv
+        ajkxdghxdghxdghxdghxdghfryehehehehehehehehehwgaeklyf
+        gjskdfhlkaaafhslzcakslhlwrhkhvvvvvvfjhlkshflks
+        sjfffffffffffffffdgkfffffffffffffffffffffffffzweru34yifrw2isdkdkdkdkdkj
+        fhsdmgfrfrfrfrfrfrfrfrfrfrfrfrfrsuigbvfsdilwlaeutyguefk
+        seseseseseseseseseseseseseseseseseseseseseseilorem
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et cupiditate alias eos quae corporis aperiam tenetur exercitationem illo facere maxime nostrum aut vel eveniet accusamus, laboriosam natus repellendus beatae soluta!
+    </p>
+</div>
+<h1>grid</h1>
+<div class="container1">
+    <div class="grid">1</div>
+    <div class="grid">2</div>
+    <div class="grid">3</div>
+    <div class="grid">4</div>
+</div>
+<h1>tansitions</h1>
+<div class="id">
+    
+</div>
+<h2>animations</h2>
+<div id="animat"></div>
+</body>
+</html>
